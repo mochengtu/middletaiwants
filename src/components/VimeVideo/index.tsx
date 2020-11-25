@@ -1,5 +1,6 @@
 import React, { FC, memo } from 'react';
 import { VimePlayer, VimeHls, VimeDefaultUi } from '@vime/react';
+import '@vime/core/themes/default.css';
 
 /**
  * https://vimejs.com/
