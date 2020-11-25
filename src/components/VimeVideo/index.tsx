@@ -26,13 +26,19 @@ export interface IVimVideo {
 
 }
 
+interface IStyle {
+    "--vm-player-theme": string;
+}
+
+type IOrigin = boolean;
+
 const VimVideo: FC = memo<IVimVideo>(() => {
 
-    const style = {
+    const style: IStyle = {
         '--vm-player-theme': '#e86c8b'
     }
 
-    const crossOrigin = true;
+    const crossOrigin: IOrigin = true;
 
     return (
         <VimePlayer
